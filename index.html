@@ -70,8 +70,8 @@
       <div class="skills-container has-text-centered">
           <i class="fa-brands fa-python fa-3x m-3 skill-icon" title="Python" style="color: #3776AB;"></i>
           <i class="devicon-typescript-plain colored fa-3x m-3 skill-icon" title="TypeScript"></i>
-          <!--<i class="devicon-cplusplus-plain colored fa-3x m-3 skill-icon" title="C++"></i>-->
-          <i class="fa-brands fa-golang fa-3x m-3 skill-icon" title="Golang" style="color: #2496ED;"></i>
+          <i class="devicon-cplusplus-plain colored fa-3x m-3 skill-icon" title="C/C++"></i>
+          <!--<i class="fa-brands fa-golang fa-3x m-3 skill-icon" title="Golang" style="color: #2496ED;"></i>-->
           <i class="fa-brands fa-rust fa-3x m-3 skill-icon" title="Rust" style="color: #000000;"></i>
           <i class="fa-brands fa-docker fa-3x m-3 skill-icon" title="Docker" style="color: #2496ED;"></i>
           <i class="devicon-kubernetes-plain colored fa-3x m-3 skill-icon" title="Kubernetes"></i>
@@ -355,7 +355,7 @@
               <div class="content mt-4">
                 <div class="level mb-2">
                   <div class="level-left">
-                    <p class="title is-4 mb-0">AlphaGen - Stock Analysis Engine</p>
+                    <p class="title is-4 mb-0">Stock Analysis Engine</p>
                     <a href="https://github.com/0xgny/Stock-Analysis-Engine" target="_blank" class="ml-4">
                       <i class="fab fa-github"></i>
                     </a>
@@ -371,14 +371,12 @@
                   <span class="tag">Scikit-learn</span>
                   <span class="tag">Statsmodels</span>
                   <span class="tag">Pandas</span>
-                  <span class="tag">Gemini API (in web version)</span>
                 </div>
                 <p></p>
                 <ul>
                   <li>Developed a comprehensive financial analysis platform using Python, integrating traditional statistical methods with advanced machine learning algorithms to analyze stock market data, implementing scikit-learn regression models for correlation analysis and statsmodels for cointegration testing across multiple asset classes</li>
                   <li>Engineered automated data pipeline and visualization system leveraging Yahoo Finance APIs, pandas for data manipulation, and matplotlib/seaborn for generating professional-grade financial charts including correlation heatmaps, volatility analysis, and regression scatter plots with statistical significance testing</li>
                   <li>Built modular ML architecture featuring pairwise regression analysis with beta coefficient calculation, rolling correlation matrices, and Engle-Granger cointegration tests, resulting in actionable investment insights through R² modeling and risk-adjusted performance metrics (Sharpe ratio, skewness, kurtosis)</li>
-                  <li>Integrated Gemini API for AI powered analysis and recommendations for investment decisions across multiple asset classes</li>
                 </ul>
 
               </div>
@@ -386,8 +384,79 @@
           </div>
         </div>
       </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-3by2">
+                <img src="src/dist/img/rust.jpg" alt="Project 2 demo">
+              </figure>
+              <div class="content mt-4">
+                <div class="level mb-2">
+                  <div class="level-left">
+                    <p class="title is-4 mb-0">IronLink rUDP  </p>
+                    <a href="https://github.com/0xgny/IronLink-rUDP" target="_blank" class="ml-4">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="tags mb-4">
+                  <span class="tag">Rust</span>
+                  <span class="tag">UDP</span>
+                </div>
+                <p></p>
+                <ul>
+                  <li>Engineered a custom Reliable UDP (rUDP) protocol in Rust, successfully implementing a Stop-and-Wait ARQ (Automatic Repeat reQuest)
+                  mechanism to guarantee exact sequence ordering and assured packet delivery over an inherently unreliable transport layer, avoiding TCP’s
+                  connection overhead.</li>
 
-      <!-- Project Card 2 -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-gap">
+       <div class="card-content">
+         <div class="columns">
+           <div class="column">
+             <figure class="image is-3by2">
+               <img src="src/dist/img/leo.jpg" alt="Project 2 demo">
+             </figure>
+             <div class="content mt-4">
+               <div class="level mb-2">
+                 <div class="level-left">
+                   <p class="title is-4 mb-0">Q-Simulate</p>
+                   <a href="https://github.com/0xgny/q-sim" target="_blank" class="ml-4">
+                     <i class="fab fa-github"></i>
+                   </a>
+                 </div>
+               </div>
+               <div class="tags mb-4">
+                 <span class="tag">Q/KDB+</span>
+                 <span class="tag">Python</span>
+               </div>
+               <p>
+                   <ul>
+                       <li>Architected a KDB+/Q tick data pipeline featuring a pub/sub Tickerplant, in-memory RDB, and a PyKX Python client. Achieved
+                   sub-millisecond query latency by pushing heavy computations (temporal joins, VWAP) to the Q server via IPC, minimizing network
+                   overhead</li>
+                       <li>
+                           Engineered a Q-based Monte Carlo feedhandler to synthesize realistic, high-frequency market data streams at 500ms intervals. Ensured
+                           high-throughput ingestion of millions of intraday points utilizing microsecond timespan types and constant-time symbol interning.
+                       </li>
+                   </ul>
+               </p>
+               <ul>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
       <div class="card card-gap">
         <div class="card-content">
           <div class="columns">
@@ -424,75 +493,10 @@
           </div>
         </div>
       </div>
-       <!-- Project Card 3-->
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="columns">
-            <div class="column">
-              <figure class="image is-3by2">
-                <img src="src/dist/img/ml.png" alt="Project 2 demo">
-              </figure>
-              <div class="content mt-4">
-                <div class="level mb-2">
-                  <div class="level-left">
-                    <p class="title is-4 mb-0">ML Project - ENGR 1330 class  </p>
-                    <a href="https://github.com/0xgny/ML-project-Fall2022" target="_blank" class="ml-4">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="tags mb-4">
-                  <span class="tag">Jupyter Workspace</span>
-                  <span class="tag">Python [NumPy, Pandas, Matplotlib, sklearn]</span>
-                </div>
-                <p></p>
-                <ul>
-                  <li>Collaborated in a team of two to analyze a dataset, focusing on NYC vehicle accidents from 2016 to 2022</li>
-                  <li>Conducted thorough data exploration and cleaning to ensure high-quality data for analysis and modeling</li>
-                  <li>Trained and visualized the model using multiple python libraries and achieved a RMSE of ~ 0.38%</li>
-                  <li>Presented findings and model results to the class, demonstrating a deep understanding of the dataset and the analytical techniques employed</li>
-                  <li>Demonstrated strong teamwork and communication skills, coordinating effectively to meet project deadlines and deliver high-quality results</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-       <!-- Project Card 4-->
-       <div class="card card-gap">
-        <div class="card-content">
-          <div class="columns">
-            <div class="column">
-              <figure class="image is-3by2">
-                <img src="src/dist/img/vss.jpg" alt="Project 2 demo">
-              </figure>
-              <div class="content mt-4">
-                <div class="level mb-2">
-                  <div class="level-left">
-                    <p class="title is-4 mb-0">Raspberry Pi Video Streaming Server  </p>
-                    <a href="https://github.com/0xgny/Video-Streaming-Server" target="_blank" class="ml-4">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="tags mb-4">
-                  <span class="tag">Raspberry Pi 5</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">Javascript</span>
-                  <span class="tag">SQLAlchemy ORM</span>
-                </div>
-                <p>A production-ready video streaming server built with FastAPI, designed for Raspberry Pi and other platforms. Features include user authentication, video upload with chunked streaming, background processing, and a modern web interface.</p>
-                <ul>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+
+
+
 
     <style>
       .card {
